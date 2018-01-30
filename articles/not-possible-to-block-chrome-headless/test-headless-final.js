@@ -18,7 +18,7 @@ const preparePageForTests = async (page) => {
   // Pass the Chrome Test.
   await page.evaluateOnNewDocument(() => {
     // We can mock this in as much depth as we need for the test.
-    window.navigator.chrome = {
+    window.chrome = {
       runtime: {},
       // etc.
     };
